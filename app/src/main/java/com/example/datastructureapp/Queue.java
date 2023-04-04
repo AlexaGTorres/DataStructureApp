@@ -10,6 +10,7 @@ public class Queue
     {
         return head == null;
     }
+
     public void add (int data)
     {
         Node node = new Node(data);
