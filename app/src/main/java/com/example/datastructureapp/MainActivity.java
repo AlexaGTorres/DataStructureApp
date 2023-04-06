@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity
     private ListView listView;
     private Button addBtn;
     private EditText itemEdit;
-    private ArrayList<String> listThing;
+    private List<String> listThing;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -27,29 +27,15 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         listView = findViewById(R.id.actualList);
-        addBtn = findViewById(R.id.buttonAdd);
-        itemEdit = findViewById(R.id.editItem);
-        listThing = new ArrayList<>();
+
+        listThing = new ArrayList<String>();
+
+        listThing.add("hello world");
+        listThing.add("hello there");
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listThing);
 
         listView.setAdapter(adapter);
-
-        addBtn.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-                String item = itemEdit.getText().toString();
-
-                if (!item.isEmpty())
-                {
-                    listThing.add(item);
-
-                    adapter.notifyDataSetChanged();
-                }
-            }
-        });
 
     }
 }

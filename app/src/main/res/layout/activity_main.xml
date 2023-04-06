@@ -7,27 +7,9 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editItem"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="4dp"
-        android:layout_toLeftOf="@id/buttonAdd"
-        android:hint="Enter item name to add in ist" />
-
-    <Button
-        android:id="@+id/buttonAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_margin="4dp"
-        android:text="Add"
-        android:textAllCaps="false" />
-
     <ListView
         android:id="@+id/actualList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/editItem"/>
+        android:layout_height="match_parent"/>
 
 </LinearLayout>
