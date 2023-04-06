@@ -32,6 +32,20 @@ public class MainActivity extends AppCompatActivity
 
         listThing.add("hello world");
         listThing.add("hello there");
+        listThing.add("hello world");
+        listThing.add("hello there");
+        listThing.add("hello world");
+        listThing.add("hello there");
+        listThing.add("hello world");
+        listThing.add("hello there");
+        listThing.add("hello world");
+        listThing.add("hello there");
+        listThing.add("hello world");
+        listThing.add("hello there");
+        listThing.add("hello world");
+        listThing.add("hello there");
+        listThing.add("hello world");
+        listThing.add("hello there");
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listThing);
 
