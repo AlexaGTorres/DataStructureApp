@@ -16,9 +16,6 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity
 {
     private ListView listView;
-    private Button addBtn;
-    private EditText itemEdit;
-    private List<String> listThing;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -28,26 +25,12 @@ public class MainActivity extends AppCompatActivity
 
         listView = findViewById(R.id.actualList);
 
-        listThing = new ArrayList<String>();
+        Queue myQueue = new Queue();
 
-        listThing.add("hello world");
-        listThing.add("hello there");
-        listThing.add("hello world");
-        listThing.add("hello there");
-        listThing.add("hello world");
-        listThing.add("hello there");
-        listThing.add("hello world");
-        listThing.add("hello there");
-        listThing.add("hello world");
-        listThing.add("hello there");
-        listThing.add("hello world");
-        listThing.add("hello there");
-        listThing.add("hello world");
-        listThing.add("hello there");
-        listThing.add("hello world");
-        listThing.add("hello there");
+        myQueue.add(10);
+        myQueue.add(20);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listThing);
+        ArrayAdapter<Queue> adapter = new ArrayAdapter<Queue>(this, myQueue);
 
         listView.setAdapter(adapter);
 
