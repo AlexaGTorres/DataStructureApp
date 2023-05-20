@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity
         yes.add(20);
         yes.add(20);
         yes.add(20);
-        yes.add(20);
+        yes.add(30);
 
 
         ArrayAdapter<Integer> adapter = new ArrayAdapter<Integer>(this, android.R.layout.simple_list_item_1, yes);
