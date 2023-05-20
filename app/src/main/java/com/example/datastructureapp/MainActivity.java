@@ -3,15 +3,11 @@ package com.example.datastructureapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextView;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -25,12 +21,39 @@ public class MainActivity extends AppCompatActivity
 
         listView = findViewById(R.id.actualList);
 
+        /*
         Queue myQueue = new Queue();
 
         myQueue.add(10);
         myQueue.add(20);
 
-        ArrayAdapter<Queue> adapter = new ArrayAdapter<Queue>(this, myQueue);
+       ArrayAdapter<Queue> adapter = new ArrayAdapter<Queue>(this, myQueue);//This still doesn't work...
+
+        listView.setAdapter(adapter);
+         */
+
+        //I know how to use list view though
+
+        ArrayList<Integer> yes = new ArrayList<Integer>();
+
+        yes.add(10);
+        yes.add(20);
+        yes.add(20);
+        yes.add(20);
+        yes.add(20);
+        yes.add(20);
+        yes.add(20);
+        yes.add(20);
+        yes.add(20);
+        yes.add(20);
+        yes.add(20);
+        yes.add(20);
+        yes.add(20);
+        yes.add(20);
+        yes.add(20);
+
+
+        ArrayAdapter<Integer> adapter = new ArrayAdapter<Integer>(this, android.R.layout.simple_list_item_1, yes);
 
         listView.setAdapter(adapter);
 

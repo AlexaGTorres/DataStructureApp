@@ -5,6 +5,7 @@ public class Queue
     //Variables
     private Node head;
     private Node tail;
+    public String temp[];
 
     public boolean isEmpty()
     {
